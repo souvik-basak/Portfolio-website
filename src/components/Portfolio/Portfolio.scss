@@ -1,0 +1,75 @@
+.text-zone{
+  width: 40%;
+  max-height: 100%;
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  font-size: 16px;
+  transform: translateY(-50%);
+  vertical-align: middle;
+  display: table-cell;
+  cursor: default;
+
+  span{
+    color: #ffd700;
+  }
+}
+.skills-container{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+
+
+.skill-item {
+  padding: 10px 20px;
+  background-color: #033d5d;
+  color: #ffd700;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: grab;
+  transform-origin: center;
+
+
+    &:hover {
+      background-color: #3396cb;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+  .drag-alert {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  opacity: 1;
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+}
