@@ -114,16 +114,16 @@ const Contact = () => {
             center={[22.57503914240553, 88.36520081358563]}
             zoom={13}
           >
-            <TileLayer url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[22.57503914240553, 88.36520081358563]}>
               <Popup>
                 Souvik Lives Here <br /> Come over for a cup of coffee :)
               </Popup>
-              </Marker>
+            </Marker>
           </MapContainer>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-pulse-sync" />
     </div>
   );
 };

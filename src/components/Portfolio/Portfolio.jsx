@@ -152,7 +152,7 @@ const Portfolio = () => {
           </motion.div>
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader type="ball-pulse-sync" />
     </div>
   );
 };

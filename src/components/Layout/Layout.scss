@@ -41,7 +41,8 @@
 
 .about-page,
 .contact-page,
-.portfolio-page{
+.portfolio-page,
+.project-page{
   .text-zone{
     width: 40%;
     max-height: 100%;
@@ -90,6 +91,8 @@
       color: #fff;
       font-family: sans-serif;
       font-weight: 500;
+      min-width: -moz-fit-content;
+      min-width: -webkit-fill-available;
       min-width: fit-content;
       -webkit-animation: pulse 1s;
       animation: pulse 1s;
