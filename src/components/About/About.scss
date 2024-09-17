@@ -141,3 +141,12 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container.about-page .stage-cube-cont{
+    position:static;
+    width:100%;
+    height:100%;
+    overflow:visible;
+  }
+}

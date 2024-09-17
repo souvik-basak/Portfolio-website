@@ -132,3 +132,16 @@
   animation: backInRight 1s 2s;
   animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 1200px){
+  .map-wrap{
+    float: none;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+  }
+  .info-map{
+    float: none;
+    top: 50%;
+  }
+}

@@ -95,6 +95,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className="map-wrap">
         <div className="info-map">
           Souvik Basak
           <br />
@@ -109,7 +110,6 @@ const Contact = () => {
             </a>
           </span>
         </div>
-        <div className="map-wrap">
           <MapContainer
             center={[22.57503914240553, 88.36520081358563]}
             zoom={13}

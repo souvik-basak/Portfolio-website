@@ -1,0 +1,149 @@
+.project-page {
+  padding-left: 6em;
+  width: calc(100% - 150px);
+  position: initial;
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+
+  h1.page-title {
+    margin-left: 60px;
+    margin-top: 100px;
+  }
+
+  .project-list {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 100px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    margin-top: -30px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+
+    /* Hide scrollbar in WebKit-based browsers */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .project-item {
+      position: relative;
+      flex: 0 0 300px; /* Fixed width for horizontal scroll */
+      margin-top: 70px;
+      height: 300px;
+      width: auto; /* Ensure consistent width for all items */
+      overflow: hidden;
+      border-radius: 10px;
+      scroll-snap-align: start; /* Align items for snapping */
+      transition: transform 0.3s ease; /* Smooth hover transition */
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        z-index: 2;
+        position: absolute;
+      }
+
+      .project-details {
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+        height: 100%;
+        padding: 10px 20px;
+        bottom: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) 0,
+          rgba(0, 0, 0, 1)
+        );
+        transition: all 0.3s ease;
+
+        .title {
+          font-size: 24px;
+          font-weight: 900;
+          color: #fff;
+          margin-bottom: 10px;
+          margin-top: 9.5em;
+          transition: all 0.3s ease;
+        }
+
+        .tech-stack {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          margin-top: 10px;
+
+          .tech-item {
+            padding: 2px 2px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+
+        .project-buttons {
+          display: flex;
+          gap: 1em;
+          margin-top: 15px;
+
+          .btn {
+            color: #ffd700;
+            font-size: 14px;
+            border: 2px solid #ffd700;
+            font-weight: 600;
+            background: transparent;
+            padding: 7px 10px;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            &:hover {
+              background-color: #ffd700;
+              color: #022C43;
+              transform: translateY(-3px);
+            }
+          }
+        }
+      }
+      &:hover .title {
+        margin-top: 6em;
+        transform: translateY(-5px);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, #ffd700, #000);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+
+      &:hover:after {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container.project-page{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    h1.page-title{
+      padding-left: -6em;
+      margin-top: 20px;
+    }
+  }
+}

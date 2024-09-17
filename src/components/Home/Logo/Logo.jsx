@@ -100,18 +100,20 @@ const Logo = () => {
 
     const onHover = () => {
       gsap.to(logoElement, {
-        rotationY: 25, // Rotate the logo on Y-axis for 3D effect
+        // rotationY: 25,
+        rotationX: 25,
         scale: 1.1, // Slightly enlarge the logo on hover
-        duration: 0.6, // Duration of the hover animation
+        duration: 0.3, // Duration of the hover animation
         ease: "power3.out",
       });
     };
 
     const onLeave = () => {
       gsap.to(logoElement, {
-        rotationY: 0, // Reset the rotation
+        rotationY: 0,
+        rotationX: 0,
         scale: 1, // Reset the scale
-        duration: 0.6, // Duration of the leave animation
+        duration: 0.3, // Duration of the leave animation
         ease: "power3.inOut",
       });
     };

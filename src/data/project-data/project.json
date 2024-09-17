@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "description": "This is a project",
+      "image": "../project-img/dice-game.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "description": "This is a project",
+      "image": "../project-img/currency-converter.jpg",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 3,
+      "name": "Project 1",
+      "description": "This is a project",
+      "image": "../project-img/dice-game.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 4,
+      "name": "Project 2",
+      "description": "This is a project",
+      "image": "../project-img/currency-converter.jpg",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 5,
+      "name": "Project 1",
+      "description": "This is a project",
+      "image": "../project-img/dice-game.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 6,
+      "name": "Project 2",
+      "description": "This is a project",
+      "image": "../project-img/currency-converter.jpg",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 7,
+      "name": "Project 1",
+      "description": "This is a project",
+      "image": "../project-img/dice-game.png",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 8,
+      "name": "Project 2",
+      "description": "This is a project",
+      "image": "../project-img/currency-converter.jpg",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "https://www.google.com"
+    }
+  ]
+}
