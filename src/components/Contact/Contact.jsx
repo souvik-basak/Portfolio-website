@@ -3,7 +3,7 @@ import "./Contact.scss";
 import Loader from "react-loaders";
 import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -25,12 +25,12 @@ const Contact = () => {
       )
       .then(() => {
         alert("Message sent successfully");
-        window.location.reload();
-        // refForm.current.reset();
-      }),
-      () => {
+        // window.location.reload();
+        refForm.current.reset();
+      })
+      .catch(() => {
         alert("Message failed to send, please try again");
-      };
+      });
   };
   return (
     <div>
@@ -96,20 +96,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="map-wrap">
-        <div className="info-map">
-          Souvik Basak
-          <br />
-          India,
-          <br />
-          Kolkata, West Bengal,
-          <br />
-          PIN - 700061
-          <span>
-            <a href="mailto: souvik.basak2404@gmail.com">
-              souvik.basak2404@gmail.com
-            </a>
-          </span>
-        </div>
+          <div className="info-map">
+            Souvik Basak
+            <br />
+            India,
+            <br />
+            Kolkata, West Bengal,
+            <br />
+            PIN - 700061
+            <span>
+              <a href="mailto: souvik.basak2404@gmail.com">
+                souvik.basak2404@gmail.com
+              </a>
+            </span>
+          </div>
           <MapContainer
             center={[22.57503914240553, 88.36520081358563]}
             zoom={13}
