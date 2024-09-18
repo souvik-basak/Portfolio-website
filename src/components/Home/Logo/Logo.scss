@@ -69,3 +69,12 @@
   stroke: #ffd700;
   stroke-width: 10;
 }
+
+@media screen and (max-width: 480px) {
+  .logo-container .solid-logo {
+    top: -40px;
+  }
+  .svg-cont{
+    top: -40px;
+  }
+}

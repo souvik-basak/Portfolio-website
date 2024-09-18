@@ -144,6 +144,7 @@ const Logo = () => {
         version="1.0"
         viewBox="0 0 559 897"
         xmlns="http://www.w3.org/2000/svg"
+        className="svg-cont"
       >
         <g
           className="svg-container"
