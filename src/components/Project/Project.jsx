@@ -7,61 +7,35 @@ import Loader from "react-loaders";
 // Import local images
 import diceGameImg from "../../data/project-img/dice-game.png";
 import currencyConverterImg from "../../data/project-img/currency-converter.jpg";
+import notesAppImg from "../../data/project-img/notes-app.png"
 
 const projects = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Qwik Notes",
     description: "This is a project",
-    image: diceGameImg,
+    image: notesAppImg,
     tech: ["React", "Node.js", "Express.js", "MongoDB"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project1",
+    url: "https://qwiknote.vercel.app",
+    github: "https://github.com/souvik-basak/notes-app",
   },
   {
     id: 2,
-    name: "Project 2",
+    name: "Dice Game",
     description: "This is a project",
-    image: currencyConverterImg,
-    tech: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project2",
+    image: diceGameImg,
+    tech: ["React", "TailwindCSS"],
+    url: "https://dice-game-six-blue.vercel.app/",
+    github: "https://github.com/souvik-basak/dice-game",
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "Coin Convert",
     description: "This is a project",
     image: currencyConverterImg,
     tech: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project3",
-  },
-  {
-    id: 4,
-    name: "Project 4",
-    description: "This is a project",
-    image: "https://example.com/another-image.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project4",
-  },
-  {
-    id: 4,
-    name: "Project 4",
-    description: "This is a project",
-    image: "https://example.com/another-image.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project4",
-  },
-  {
-    id: 4,
-    name: "Project 4",
-    description: "This is a project",
-    image: "https://example.com/another-image.jpg",
-    tech: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.google.com",
-    github: "https://github.com/user/project4",
+    url: "https://coinconvert.vercel.app/",
+    github: "https://github.com/souvik-basak/convert_currency",
   },
 ];
 
