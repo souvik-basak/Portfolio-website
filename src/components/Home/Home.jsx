@@ -36,43 +36,46 @@ const Home = () => {
   },[])
   return (
     <>
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i</span>
-          <span className={`${letterClass} _13`}>,</span>
-          <br />
-          <span className={`${letterClass} _14`}>I</span>
-          {" "}
-          <span className={`${letterClass} _15`}>a</span>
-          <span className={`${letterClass} _16`}>m</span>
-          <img src={LogoTitle} alt="developer" />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={22}
-          />
-        </h1>
-        <h2>Frontend Developer / JavaScript Expert / ReactJS Developer</h2>
-        <div className="btn-set">
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-          <Link to="" target="_blank" className="cv-button">
-            DOWNLOAD CV
-          </Link>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <span className={`${letterClass} _13`}>,</span>
+            <br />
+            <span className={`${letterClass} _14`}>I</span>{" "}
+            <span className={`${letterClass} _15`}>a</span>
+            <span className={`${letterClass} _16`}>m</span>
+            <img src={LogoTitle} alt="developer" />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={22}
+            />
+          </h1>
+          <h2>Frontend Developer / JavaScript Expert / ReactJS Developer</h2>
+          <div className="btn-set">
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+            <Link
+              to="https://drive.google.com/file/d/1OrVD93uz_V_rK5s_7fpJSHbFR8kVpdnL/view?usp=sharing"
+              target="_blank"
+              className="cv-button"
+            >
+              VIEW RESUME
+            </Link>
+          </div>
         </div>
+        <Logo />
       </div>
-      <Logo/>
-    </div>
-    <Loader type="ball-pulse-sync"/>
+      <Loader type="ball-pulse-sync" />
     </>
   );
 };

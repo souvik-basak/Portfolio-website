@@ -8,10 +8,20 @@ import Loader from "react-loaders";
 import diceGameImg from "../../data/project-img/dice-game.png";
 import currencyConverterImg from "../../data/project-img/currency-converter.jpg";
 import notesAppImg from "../../data/project-img/notes-app.png"
+import ChatterBoxImg from "../../data/project-img/chatterbox.png"
 
 const projects = [
   {
     id: 1,
+    name: "Chatter Box",
+    description: "This is a project",
+    image: ChatterBoxImg,
+    tech: ["React", "MongoDB", "Node.js", "Express.js"],
+    url: "https://chatterbox-v29m.onrender.com/",
+    github: "https://github.com/souvik-basak/ChatterBox",
+  },
+  {
+    id: 2,
     name: "Qwik Notes",
     description: "This is a project",
     image: notesAppImg,
@@ -20,7 +30,7 @@ const projects = [
     github: "https://github.com/souvik-basak/notes-app",
   },
   {
-    id: 2,
+    id: 3,
     name: "Dice Game",
     description: "This is a project",
     image: diceGameImg,
@@ -29,7 +39,7 @@ const projects = [
     github: "https://github.com/souvik-basak/dice-game",
   },
   {
-    id: 3,
+    id: 4,
     name: "Coin Convert",
     description: "This is a project",
     image: currencyConverterImg,
